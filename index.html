@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texas Legends</title>
+        <meta name="description" content="Texas Legends Gun Range and Training Center">
+        <meta name="author" content="Eric Kalbfleisch">
+        <link rel="icon" href="/media/logo/favicon_io/favicon.ico" type="image/x-icon">
+
+        <!--jQuery and Slider-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/lightslider.js"></script>
+        <script type="text/javascript" src="/js/slide-in.js"></script>
+
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Bebas+Neue&family=Noto+Sans&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+    </head>
+
+    <body>
+        <header id="top">
+            
+            <nav>
+              <ul>
+                <img src="media/logo/logo_black_transparent.png" alt="Texas Legends Logo"/>
+                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#memberships">Memberships</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="https://shop.texaslegendsguns.com/">Shop</a></li>
+                <li><a href="#ffl">FFL Transfers + NFA</a></li>
+              </ul>
+           </nav>
+        </header>
+
+        <main>
+            <div class="splash-video">
+                <video playsinline autoplay muted loop id="reel">
+                    <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <div class="overlay-container">
+                    <img src="media/logo/logo_white_transparent.png" alt="Texas Legends Logo"/>
+                    <a href="https://waiver.smartwaiver.com/w/5e178b39ce353/web">Waiver</a>
+                </div>
+            </div>
+
+            <div class="hours-contact-container">
+                        <div class="hours slide-left">
+                            <h2> Range Hours</h2>
+                            <h3>10:00 AM - 9:00 PM Everyday</h3>
+                            <h4>We take our last shooters at 8:00PM</h4>
+                        </div>
+                        <div class="contact slide-right">
+                            <h2>Contact Us</h2>
+                            <h3>info@texaslegendsguns.com</h3>
+                            <h4>(469) 675-8803)</h4>
+                            <h4>1499 Central Expressway North</h4>
+                            <h4>Allen, TX 75013</h4>
+                        </div>
+            </div>
+            <h2>Range Pricing</h2>
+            <div class="pricing slide-right">
+                <div class="range-fees">
+                    <div class="pricing-pistol">
+                        <h2>Pistol/Rifle/Shotgun</h2>
+                        <section class="price-and-description">
+                            <h2>$22</h2>
+                            <h4>15 or 25 yard lane</h4>
+                        </section>
+                        <section class="price-and-description">
+                            <h2>$20</h2>
+                            <h4>each additional guest on the same lane</h4>
+                        </section>
+                    </div> 
+                    <div class="pricing-rifle">
+                        <h2>Rifle</h2>
+                        <section class="price-and-description">
+                            <h2>$28</h2>
+                            <h4>50 yard rifle only lane</h4>
+                        </section>
+                        <section class="price-and-description">
+                            <h2>$25</h2>
+                            <h4>each additional guest on the same lane</h4>
+                        </section>
+                    </div>
+                    <div class="pricing-essentials">
+                        <div class="essentials-text-container">
+                            <h2>Essentials</h2>
+                            <h6>If you don't have your own</h6>
+                        </div>
+                        <section class="price-and-description">
+                            <h2>$4</h2>
+                            <h4>Eye Protection</h4>
+                        </section>
+                        <section class="price-and-description">
+                            <h2>$1</h2>
+                            <h4>Ear Protection</h4>
+                        </section>
+                        <section class="price-and-description">
+                            <h2>$2</h2>
+                            <h4>Each Target</h4>
+                        </section>
+                    </div>
+                    <div class="target-slider" id="target-slider">
+                        <img src="/media/img/targets/balloons.jpg" alt="target-ballons">
+                        <img src="/media/img/targets/battleships.jpg" alt="target-battleships">
+                        <img src="/media/img/targets/clocks.jpg" alt="target-clocks">
+                        <img src="/media/img/targets/fbi_qual.jpg" alt="target-FBI">
+                        <img src="/media/img/targets/numbered_circles.jpg" alt="target-numbered-circles">
+                        <img src="/media/img/targets/idpa.jpg" alt="target-idpa">
+                        <img src="/media/img/targets/anatomy.jpg" alt="target-anatomy">
+                        <img src="/media/img/targets/cards.jpg" alt="target-cards">
+                        <img src="/media/img/targets/drills.jpg" alt="target-drills">
+                        <img src="/media/img/targets/badguy1.jpg" alt="target-badguy1">
+                        <img src="/media/img/targets/badguy2.jpg" alt="target-badguy2">
+                        <img src="/media/img/targets/badguy3.jpg" alt="target-badguy3">
+                        <img src="/media/img/targets/ltc.jpg" alt="target-ltc">
+                        <img src="/media/img/targets/zombie.jpg" alt="target-zombie">
+                    </div>
+                    <script type="text/javascript" src="js/target_slider.js"></script>
+                    </div>
+                    <h3 class="first-responders">First Responders and Military Receive 10% off lane fees</h3>
+                    <div class="pricing-rentals">
+                        <h2>Rentals</h2>
+                        <section class="price-and-description">
+                            <h2>$10</h2>
+                            <h4>Handguns</h4>
+                        </section>
+                        <section class="price-and-description">
+                            <h2>$15-25</h2>
+                            <h4>Rifles and Shotguns</h4>
+                        </section>
+                        <section class="price-and-description">
+                            <h2>$50</h2>
+                            <h4>Handgun Package</h4>
+                            <h4>Includes primary lane fee and all $10 handguns (2 at a time)</h4>
+                        </section>
+                    </div> 
+                <h4 class="group-rates">Contact Us for Group and Event Pricing</h4>
+            </div>
+            <div class="rentals slide-left">
+                <h2>Firearm Rentals</h2>
+                <section class="slider" id="products">
+                    <ul id="rentals" class="cs-hidden">
+                        <li class="item-a">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/glock_17.jpg" alt="1">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Glock</a>
+                                    <span>17</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                    
+                        </li>
+                        <li class="item-b">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/sig_365_xmacro.jpg" alt="2">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">SIG-Sauer</a>
+                                    <span>365 X-Macro</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                    
+                        <li class="item-c">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/colt_1911.jpg" alt="3">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Colt</a>
+                                    <span>1911</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-d">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/ruger_blackhawk.jpg" alt="4">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Ruger</a>
+                                    <span>Blackhawk</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">.357 Mag</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-e">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/cz_75_p01_omega.png" alt="5">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">CZ</a>
+                                    <span>75 P-01 Omega</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-f">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/glock_43x.jpg" alt="6">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Glock</a>
+                                    <span>43x</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-g">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/sig_mcx.jpg" alt="7">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">SIG-Sauer</a>
+                                    <span>MCX</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">.223/5.56</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-h">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/psa_ak47.jpg" alt="8">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Palmetto State Armory</a>
+                                    <span>AK-47</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">7.62x39</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-i">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/glock_19.jpg" alt="9">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Glock</a>
+                                    <span>19</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-j">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/cz_p10f.jpg" alt="10">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">CZ</a>
+                                    <span>P-10 F</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-k">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/shadow_mr920.jpg" alt="11">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Shadow Systems</a>
+                                    <span>MR920</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-k">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/beretta_m9a4.jpg" alt="12">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Beretta</a>
+                                    <span>M9A4</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-k">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/tippmann_m422.jpg" alt="13">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Tippmann</a>
+                                    <span>M4-22</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">22LR</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-l">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/sw_500.jpg" alt="14">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Smith and Wesson</a>
+                                    <span>500</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">.500 SW</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-m">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/hk_vp9.jpg" alt="15">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Hckler and Koch</a>
+                                    <span>VP9</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-n">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/rentals/sig_p226.jpg" alt="16">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">SIG-Sauer</a>
+                                    <span>P226</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">9mm</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                      </ul>
+                    </section>
+                    <script type="text/javascript" src="js/script.js"></script>
+            </div>
+            <div class="classes slide-right">
+                <h2>Classes</h2>
+                <section class="slider" id="products">
+                    <ul id="classes" class="cs-hidden">
+                        <li class="item-a">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/ltc.jpg" alt="1">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Texas License to Carry</a>
+                                    <span>6 Hours</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$75</a>
+                            </div>
+                        </div>
+                    
+                        </li>
+                        <li class="item-b">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/basic_handgun.png" alt="2">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Basic Handgun</a>
+                                    <span>2.5 Hours</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$125</a>
+                            </div>
+                        </div>
+                        </li>
+                    
+                        <li class="item-c">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/private_instruction.png" alt="3">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Private Instruction</a>
+                                    <span>1 Hour</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$100</a>
+                            </div>
+                        </div>
+                        </li>
+                
+                        <li class="item-d">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/intermediate_handgun.png" alt="4">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Intermediate Handgun</a>
+                                    <span>2.5 Hours</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$150</a>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="item-e">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/urban_survival_awareness.webp" alt="4">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Urban Survival Awareness</a>
+                                    <span>3 Hours</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$55</a>
+                            </div>
+                        </div>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+            <h2>Range Rules</h2>
+            <div class="rules slide-left">
+                <div class="rules-general">
+                    <h4>General</h4>
+                    <ol>
+                        <li>Eye and Ear protection must be worn at all times</li>
+                        <li>No Pregnant Women</li>
+                        <li>No Children under age 12 on the range</li>
+                        <li>No Food or Drink on the Range</li>
+                        <li>No Aluminum cased ammunition</li>
+                        <li>When entering and exiting range, only open 1 door at a time</li>
+                        <li>Used targets are disposed of laid flat on back range tables</li>
+                    </ol>
+                </div>
+
+                <div class="rules-firearms-handling">
+                    <h4>Firearms Handling</h4>
+                    <ol>
+                        <li>All Firearms must remain in cases, carry tubs, or holsters  until in a lane and forward of the RED SAFETY LINE</li>
+                        <li>Do NOT transfer firearms from lane to lane, or person to person without a case, carry tub, or holster</li>
+                        <li>All Firearm muzzles must be pointed downrange at all times</li>
+                        <li>NO HOLSTER DRAWS</li>
+                        <li>NO RAPID FIRE (Per Range Safety Officer Discretion)</li>
+                    </ol>
+                </div>
+
+                <div class="rules-shotguns">
+                    <h4>Shotguns</h4>
+                    <ol>
+                        <li>Only buckshot or slugs - NO birdshot or target loads</li>
+                        <li>Must have a shoulder stock and sights</li>
+                    </ol>
+                </div>
+
+                <div class="rules-rifles">
+                    <h4>Rifles</h4>
+                    <ol>
+                        <li>Must have sights</li>
+                        <li>50 yard Rifle range is Rifles only</li>
+                    </ol>
+                </div>
+
+            </div>
+            <h2>Shop Our Online Store</h2>
+            <div class="online-store slide-right">
+                <h4>Can't find what you're looking for? Our online store is a direct link to our distributors - enabling you to shop the largest selection around!</h4>
+                <h4>Firearms can be shipped to our store for pickup!</h4>
+                <h4>Non-firearms can be shipped directly to your door!</h4>
+                <a href="https://shop.texaslegendsguns.com/">Enter</a>
+            </div>
+            <div class="question">
+                <button id="questionButton">Ask a Question!</button>
+                <div id="questionPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h2>Ask a Question</h2>
+                        <form id="questionForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br>
+                
+                            <label for="contactMethod">Preferred Contact Method:</label><br>
+                            <input type="radio" id="contactMethodEmail" name="contactMethod" value="email">
+                            <label for="contactMethodEmail">Email</label><br>
+                            <input type="radio" id="contactMethodPhone" name="contactMethod" value="phone">
+                            <label for="contactMethodPhone">Phone</label><br>
+                
+                            <div id="phoneField" class="hidden">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone"><br>
+                            </div>
+                
+                            <div id="emailField" class="hidden">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email"><br>
+                            </div>
+                
+                            <label for="question">Your Question:</label><br>
+                            <textarea id="question" name="question" rows="4" required></textarea><br>
+                
+                            <input class="submit-button" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                
+                <script src="/js/question.js"></script>
+            </div>
+
+
+
+            
+        </main>
+
+        <footer>
+            
+            <div class="contact-card-container">
+                <h4>Join Us</h4>
+                <div class="contact-card">
+                    <a href="https://www.instagram.com/rebirthfarms/"><img src="/media/social/iconmonstr-youtube-8-240.png"/></a>
+                </div>
+                <a href="#top"><img class="logo" src="media/logo/logo_black_transparent.png" alt="" /></a>
+                <div class="contact-card">
+                    <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-instagram-13-240.png"/></a>
+                </div>
+                <div class="contact-card">
+                    <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-facebook-6-240.png"/></a>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
