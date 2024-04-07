@@ -60,11 +60,23 @@
                         <div class="contact slide-right">
                             <h2>Contact Us</h2>
                             <h3>info@texaslegendsguns.com</h3>
-                            <h4>(469) 675-8803)</h4>
+                            <h4>(469) 675-8803</h4>
                             <h4>1499 Central Expressway North</h4>
                             <h4>Allen, TX 75013</h4>
                         </div>
             </div>
+
+            <div class="announcements"></div>
+
+            <div class="map slide-bottom">
+                <iframe src="https://storage.googleapis.com/maps-solutions-cszmnkgfd6/locator-plus/ttkr/locator-plus.html"
+                        width="100%" height="100%"
+                        style="border:0;"
+                        loading="lazy">
+                </iframe>
+            </div>
+
+
             <h2>Range Pricing</h2>
             <div class="pricing slide-right">
                 <div class="range-fees">
@@ -128,28 +140,43 @@
                     </div>
                     <h3 class="first-responders">First Responders and Military Receive 10% off lane fees</h3>
                     <div class="pricing-rentals">
-                        <h2>Rentals</h2>
-                        <section class="price-and-description">
-                            <h2>$10</h2>
-                            <h4>Handguns</h4>
-                        </section>
-                        <section class="price-and-description">
-                            <h2>$15-25</h2>
-                            <h4>Rifles and Shotguns</h4>
-                        </section>
-                        <section class="price-and-description">
-                            <h2>$50</h2>
-                            <h4>Handgun Package</h4>
-                            <h4>Includes primary lane fee and all $10 handguns (2 at a time)</h4>
-                        </section>
+                        <div class="rentals1">
+                            <h2>Rentals</h2>
+                            <section class="price-and-description">
+                                <h2>$10</h2>
+                                <h4>Handguns</h4>
+                            </section>
+                            <section class="price-and-description">
+                                <h2>$15-25</h2>
+                                <h4>Rifles and Shotguns</h4>
+                            </section>
+                            <section class="price-and-description">
+                                <h2>$50</h2>
+                                <h4>Handgun Package</h4>
+                                <h4>Includes primary lane fee and all $10 handguns (2 at a time)</h4>
+                            </section>
+                        </div>
+                        <div class="rentals2"></div>
+                        <div class="rentals3"></div>
+                        <div class="rentals4"></div>
+                    </div>
+
                     </div> 
                 <h4 class="group-rates">Contact Us for Group and Event Pricing</h4>
             </div>
             <div class="rentals slide-left">
-                <h2>Firearm Rentals</h2>
+                <script type="text/javascript" src="js/rental_filter.js"></script>
+                <div class="filter-options">
+                    <h2>Firearm Rentals</h2>
+                    <div class="filter-container">
+                    <label><input type="checkbox" class="filter-checkbox" value="compact-pistol">Compact Pistol</label>
+                    <label><input type="checkbox" class="filter-checkbox" value="full-size-pistol">Full-Size Pistol</label>
+                    <label><input type="checkbox" class="filter-checkbox" value="long-gun">Rifle/Shotgun</label>
+                    </div>
+                </div>
                 <section class="slider" id="products">
                     <ul id="rentals" class="cs-hidden">
-                        <li class="item-a">
+                        <li class="item-a" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -172,9 +199,9 @@
                                 <a href="#" class="price">9mm</a>
                             </div>
                         </div>
-                    
                         </li>
-                        <li class="item-b">
+
+                        <li class="item-b" data-category="compact-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -199,7 +226,7 @@
                         </div>
                         </li>
                     
-                        <li class="item-c">
+                        <li class="item-c" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -224,7 +251,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-d">
+                        <li class="item-d" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -249,7 +276,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-e">
+                        <li class="item-e" data-category="compact-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -274,7 +301,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-f">
+                        <li class="item-f" data-category="compact-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -299,7 +326,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-g">
+                        <li class="item-g" data-category="long-gun">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -324,7 +351,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-h">
+                        <li class="item-h" data-category="long-gun">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -349,7 +376,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-i">
+                        <li class="item-i" data-category="compact-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -374,7 +401,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-j">
+                        <li class="item-j" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -399,7 +426,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-k">
+                        <li class="item-k" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -424,7 +451,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-k">
+                        <li class="item-l" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -449,7 +476,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-k">
+                        <li class="item-m" data-category="long-gun">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -474,7 +501,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-l">
+                        <li class="item-n" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -494,12 +521,12 @@
                                     <span>500</span>
                                 </div>
                                 <!--price-->
-                                <a href="#" class="price">.500 SW</a>
+                                <p class="price">.500 SW</p>
                             </div>
                         </div>
                         </li>
                 
-                        <li class="item-m">
+                        <li class="item-o" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -515,7 +542,7 @@
                             <div class="detail-box">
                                 <!--type-->
                                 <div class="type">
-                                    <a href="#">Hckler and Koch</a>
+                                    <a href="#">Heckler and Koch</a>
                                     <span>VP9</span>
                                 </div>
                                 <!--price-->
@@ -524,7 +551,7 @@
                         </div>
                         </li>
                 
-                        <li class="item-n">
+                        <li class="item-p" data-category="full-size-pistol">
                             <!--box slider-->
                             <div class="box">
                             <!--img-box-->
@@ -599,7 +626,7 @@
                                 <!--type-->
                                 <div class="type">
                                     <a href="#">Basic Handgun</a>
-                                    <span>2.5 Hours</span>
+                                    <span>3 Hours</span>
                                 </div>
                                 <!--price-->
                                 <a href="#" class="price">$125</a>
@@ -680,14 +707,63 @@
                             </div>
                         </div>
                         </li>
+                        <li class="item-f">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/intro_handgun_optics.png" alt="4">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Intro to Handgun Optics</a>
+                                    <span>2 Hours</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$75</a>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="item-g">
+                            <!--box slider-->
+                            <div class="box">
+                            <!--img-box-->
+                                <div class="slide-img">
+                                    <img src="media/img/classes/intermediate_handgun.png" alt="4">
+                                    <!--overlayer-->
+                                    <div class="overlay">
+                                        <!--buy button-->
+                                        <a href ="#" class="buy-btn">Details</a>
+                                    </div>
+                                </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">LTC Qualification Only</a>
+                                    <span>2 Hours</span>
+                                </div>
+                                <!--price-->
+                                <a href="#" class="price">$52</a>
+                            </div>
+                        </div>
+                        </li>
                     </ul>
                 </section>
 
             </div>
             <h2>Range Rules</h2>
-            <div class="rules slide-left">
+            <div class="rules-container slide-bottom">
+                <div class="rules">
                 <div class="rules-general">
-                    <h4>General</h4>
+                    <h3>General</h3>
                     <ol>
                         <li>Eye and Ear protection must be worn at all times</li>
                         <li>No Pregnant Women</li>
@@ -700,7 +776,7 @@
                 </div>
 
                 <div class="rules-firearms-handling">
-                    <h4>Firearms Handling</h4>
+                    <h3>Firearms Handling</h3>
                     <ol>
                         <li>All Firearms must remain in cases, carry tubs, or holsters  until in a lane and forward of the RED SAFETY LINE</li>
                         <li>Do NOT transfer firearms from lane to lane, or person to person without a case, carry tub, or holster</li>
@@ -711,7 +787,7 @@
                 </div>
 
                 <div class="rules-shotguns">
-                    <h4>Shotguns</h4>
+                    <h3>Shotguns</h3>
                     <ol>
                         <li>Only buckshot or slugs - NO birdshot or target loads</li>
                         <li>Must have a shoulder stock and sights</li>
@@ -719,19 +795,24 @@
                 </div>
 
                 <div class="rules-rifles">
-                    <h4>Rifles</h4>
+                    <h3>Rifles</h3>
                     <ol>
                         <li>Must have sights</li>
                         <li>50 yard Rifle range is Rifles only</li>
                     </ol>
                 </div>
+            </div>
+
+                <a href="https://shop.texaslegendsguns.com/">Full Rules</a>
 
             </div>
             <h2>Shop Our Online Store</h2>
-            <div class="online-store slide-right">
-                <h4>Can't find what you're looking for? Our online store is a direct link to our distributors - enabling you to shop the largest selection around!</h4>
-                <h4>Firearms can be shipped to our store for pickup!</h4>
-                <h4>Non-firearms can be shipped directly to your door!</h4>
+            <div class="online-store slide-bottom">
+                <div class="store-info-container">
+                    <h4>Can't find what you're looking for? Our online store is a direct link to our distributors - enabling you to shop the largest selection around!</h4>
+                    <h4>Firearms can be shipped to our store for pickup!</h4>
+                    <h4>Non-firearms can be shipped directly to your door!</h4>
+                </div>
                 <a href="https://shop.texaslegendsguns.com/">Enter</a>
             </div>
             <div class="question">
@@ -744,7 +825,7 @@
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required><br>
                 
-                            <label for="contactMethod">Preferred Contact Method:</label><br>
+                            <label for="contactMethod">How should we contact you?</label><br>
                             <input type="radio" id="contactMethodEmail" name="contactMethod" value="email">
                             <label for="contactMethodEmail">Email</label><br>
                             <input type="radio" id="contactMethodPhone" name="contactMethod" value="phone">
@@ -778,17 +859,34 @@
 
         <footer>
             
-            <div class="contact-card-container">
-                <h4>Join Us</h4>
-                <div class="contact-card">
-                    <a href="https://www.instagram.com/rebirthfarms/"><img src="/media/social/iconmonstr-youtube-8-240.png"/></a>
+            <div class="footer">
+                <div class="logo">
+                    <a href="#top"><img class="logo" src="media/logo/logo_white_transparent.png" alt="" /></a>
                 </div>
-                <a href="#top"><img class="logo" src="media/logo/logo_black_transparent.png" alt="" /></a>
-                <div class="contact-card">
-                    <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-instagram-13-240.png"/></a>
-                </div>
-                <div class="contact-card">
-                    <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-facebook-6-240.png"/></a>
+
+                <div class="footer-container">
+                    <div class="newsletter">
+                        <form action="your-server-endpoint-for-handling-submissions" method="post">
+                            <label for="email">Subscribe for weekly deals:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <button type="submit"><img src="media/img/icons/submit.png"/></button>
+                          </form>
+                    </div>
+                    <div class="social">
+                        <h3>Follow Us!</h3>
+                        <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-instagram-13-240.png"></a>
+                        <a href="https://www.facebook.com/TexasLegendsGuns/"><img src="/media/social/iconmonstr-facebook-3-240.png"></a>
+                        <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-youtube-8-240.png"></a>
+                    </div>
+                    <div class="recruiting">
+                        <a href="#">Join Our Team</a>
+                    </div>
+                    <div class="contact-us">
+                        <h3>info@texaslegendsguns.com</h3>
+                        <h4>(469) 675-8803</h4>
+                        <h4>1499 Central Expressway North</h4>
+                        <h4>Allen, TX 75013</h4>
+                    </div>
                 </div>
             </div>
     </footer>
