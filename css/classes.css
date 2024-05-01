@@ -1,0 +1,151 @@
+h2 {
+    margin-left: 10px;
+}
+
+h3 {
+    color: black;
+    margin-left: 10px;
+}
+
+h4 {
+    margin: 10px;
+    padding-left: 10px;
+}
+
+ul {
+    margin: 10px;
+}
+
+.header {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.classes-centering-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.class-container {
+    background-color: rgba(126, 126, 126, 0.8);
+    border-radius: 7px;
+    display: grid;
+    margin: 10px 10px 30px 10px;
+    grid-template-rows: auto auto;
+    width: 90%;
+    max-width: 1020px;
+}
+
+.class-container h3 {
+    margin-top: 10px;
+}
+
+.image-container {
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+
+.class-description {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 492px) {
+
+    .class-description {
+        height: 100%;
+        justify-content: space-around;
+    }
+    .image-container {
+        width: 100%; 
+        height: 100vh; 
+        max-height: 500px;
+        border-top-left-radius: 7px; 
+        border-bottom-left-radius: 7px;
+    }
+
+    .class-container {
+        grid-template-rows: none;
+        height: auto;
+        grid-template-columns: 30% 70%;
+    }
+
+    .class-description h4 {
+        font-size: 16px;
+    }
+
+
+}
+
+.class-description ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.class-description li {
+    font-family: "Inter";
+}
+
+.price-duration-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.class-description a {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: 1100D3;
+    height: 50px;
+    width: 50%;
+    max-width: 200px;
+    align-self: center;
+    text-align: center;
+    border-radius: 7px;
+    background-color: blue;
+    line-height: 50px;
+    color: white;
+}
+
+.ltc {
+    background-image: url('/media/img/classes/ltc.jpg');
+}
+
+.basic-handgun {
+    background-image: url('/media/img/classes/basic_handgun.png');
+}
+
+.urban-survival-awareness {
+    background-image: url('/media/img/classes/urban_survival_awareness.webp');
+}
+
+.ltc-qual-only {
+    background-image: url('/media/img/classes/intermediate_handgun.png');
+}
+
+.intermediate-handgun {
+    background-image: url('/media/img/classes/intermediate_handgun.png');
+}
+
+.red-dot {
+    background-image: url('/media/img/classes/intro_handgun_optics.png');
+}
+
+.basic-handgun-carry {
+    background-image: url('/media/img/classes/intermediate_handgun.png');
+}

@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    margin: 0px;
+    margin-left: 50px;
+}
+
+.ffl-transfers-in, .transfer-in-process, .ffl-transfers-out, .transfer-out-process, .nfa-transfers, .nfa-process {
+    width: 1000px;
+}
+
+.transfer-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.ffl-transfers-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-pricing-container {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    padding-left: 20px;
+}
+
+.nfa-transfers {
+    display: flex;
+    align-items: center;
+}
+
+.silencershop-logo {
+    width: 200px;
+}

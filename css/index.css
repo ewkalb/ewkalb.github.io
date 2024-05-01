@@ -1,0 +1,721 @@
+  /* splash video */
+
+  .splash-video {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.video-container {
+    width: 100%;
+    height: 700px; /* Fixed height for the container */
+    overflow: hidden; /* Hide any overflowing content */
+    position: relative; /* Position the iframe relative to the container */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 50%; /* Align the top of the iframe with the vertical center of the container */
+    left: 50%; /* Align the left of the iframe with the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Center the iframe within the container */
+    
+    min-width: 100%; /* Ensure the video fills the container horizontally */
+    min-height: 100%; /* Ensure the video fills the container vertically */
+    object-fit: contain; /* Maintain the aspect ratio and fit the entire video within the container */
+  }
+
+  /*
+
+@media screen and (max-width: 768px) {
+    .video-container {
+      height: 600px; 
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .video-container {
+      height: 600px; 
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .video-container {
+      height: 700px; 
+    }
+  }
+
+  */
+
+.overlay-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+
+
+.overlay-container img {
+    filter: drop-shadow(5px 5px 4px black)
+}
+
+.overlay-container a {
+    display: inline-block;
+    font-family: "Bebas Neue";
+    font-size: 16px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    align-self: center;
+    border-radius: 7px;
+    background-color: #1100D3;
+    color: white;
+    width: 70%;
+    margin-top: 10%;
+}
+
+.splash-video a:hover {
+    background-color: rgb(2, 2, 180);
+}
+
+/* contact + hours */
+
+.hours-contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+
+.hours {
+    background-image: url("/media/img/range_empty.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.hours h2 {
+    padding-left: 24px;
+    font-size: 32px;
+}
+
+.hours h3 {
+    padding-left: 18px;
+    color:#333333;
+    font-size: 24px;
+}
+
+.hours h4 {
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+.contact {
+    background-image: url("/media/img/lobby.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.contact h2 {
+    padding-left: 24px;
+    font-size: 32px;
+}
+
+.contact h3 {
+    padding-left: 18px;
+    color:#333333;
+    font-size: 24px;
+}
+
+.contact h4 {
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+.section-label {
+    display: flex;
+    align-content: center;
+    justify-content: center;;
+}
+
+@media screen and (min-width: 600px) {
+    .hours-contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .hours {
+        width: 48%;
+    }
+    .contact {
+        width: 48%;
+    }
+}
+
+/* map */
+
+.map {
+    height: 300px;
+}
+
+/* pricing */
+
+.header {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.pricing {
+    background-image: url(/media/img/outside_drone.jpg);
+    background-position: center;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.range-fees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    .range-fees {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .lane-pricing-container, .essentials-target-container, .pricing-rentals {
+        padding-right: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .lane-pricing-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pricing-rifle {
+        padding-right: 80px;
+    }
+}
+
+.pricing h3{
+    color: black;
+    padding-bottom: 20px;
+}
+
+.pricing h2 {
+    align-self: center;
+    
+}
+
+.pricing h4 {
+    align-self: center;
+}
+
+.pricing-pistol {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+    .pricing-pistol {
+        padding-right: 50px;
+    }
+
+}
+
+.pricing-essentials h6 {
+    margin: 0px;
+}
+
+.essentials-text-container {
+    align-items: center;
+}
+
+.essentials-text-container h6 {
+    margin-left: 20px;
+}
+
+.essentials-target-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing-rentals {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.lane-pricing-container, .essentials-target-container, .pricing-rentals {
+    width: 282px;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1025px) {
+    .lane-pricing-container {
+        width: 500px;
+    }
+    .pricing-rentals {
+        width: 822px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.handgun-package-description {
+    font-size: 10px;
+}
+
+.price-and-description {
+    display: flex;
+}
+
+.price-and-description h3 h4{
+    padding-left: 10px;
+}
+
+
+.target-slider {
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+.target-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 10;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+.first-responders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+}
+
+.first-responders h3 {
+    font-size: 12px;
+}
+
+.group-rates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+/* about us */
+.about {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px;
+}
+
+.about-description-container img {
+    width: 70%;
+    height: auto;
+    padding-left: 10%;
+    min-width: 300px;
+}
+
+.about-us-text-container {
+    padding-bottom: 30px;
+}
+
+.the-range-container h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.about-us-text-container img {
+    width: 30%;
+    padding: 0px;
+}
+
+.about-us-text-container ol {
+    color: white;
+    font-family: "Inter";
+    display: block;
+    padding-left: 30px;
+    margin: 0px;
+    
+}
+
+.the-range-container {
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.about-us-text-container li {
+    list-style-type: disc;
+}
+
+.specials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.specials-ladies-day, .specials-senior, .specials-events {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    margin: 20px;
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 350px;
+}
+.specials-ladies-day img, .specials-senior img, .specials-events img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.specials-container h6 {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+}
+.about-header img {
+    margin: 0px;
+}
+
+
+/* rentals */
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-container {
+    margin-right: 30px;
+}
+
+  .slider {
+    margin-bottom: 75px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.slide-img{
+    height: 300px;
+    position: relative;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue";
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.type a {
+    color: #222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+
+.type span{
+    color: rgba(26, 26, 26, 0.5);
+}
+
+.price{
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: Bebas Neue;
+    letter-spacing: 0.5px;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 95, 236, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay a {
+    font-size: 20px;
+}
+
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 7px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover{
+    color: #FFFFFF;
+    background-color: #341283;
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* range rules */
+.rules-container {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1000px;
+}
+
+.rules p {
+    font-family: "Bebas Neue";
+    color: #edf3ff;
+    font-size: 30px;
+    margin: 0px;
+    text-decoration: none;
+    filter: drop-shadow(5px 5px 2px #000000);
+    margin-left: 10px;
+}
+
+.rules ol {
+    border-radius: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+    max-width: 80%;
+    color: white;
+}
+
+.rules-container a {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: 1100D3;
+    height: 50px;
+    width: 40%;
+    max-width: 150px;
+    align-self: center;
+    text-align: center;
+    border-radius: 7px;
+    background-color: blue;
+    line-height: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.rules-container a:hover {
+    background-color: #1100D3;
+}
+
+/* online store */
+.online-store {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store-info-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+@media screen and (min-width: 1072px) {
+    .store-info-container {
+        flex-direction: row;
+    }
+}
+.store-left, .store-right, .store-middle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 400px;
+
+}
+
+.store-left {
+    background-image: url("/media/img/backgrounds/grey_background_left.png");
+    align-self: flex-start;
+    
+}
+
+.store-middle {
+    background-image: url("/media/img/backgrounds/grey_background_middle.png");
+    flex-grow: 4;
+}
+
+.store-right {
+    background-image: url("/media/img/backgrounds/grey_background_right.png");
+    align-self: flex-end;
+}
+
+.online-store h4 {
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.online-store a {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: 1100D3;
+    height: 50px;
+    width: 40%;
+    max-width: 150px;
+    align-self: center;
+    text-align: center;
+    border-radius: 7px;
+    background-color: blue;
+    line-height: 50px;
+    color: white;
+    margin-top: 30px;
+}
+
+.online-store a:hover {
+    background-color: rgb(0, 0, 131);
+}

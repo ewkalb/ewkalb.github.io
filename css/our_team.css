@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.management, .instructors, .staff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-card {
+    background-color: rgba(126, 126, 126, 0.8);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 10px 30px 10px;
+    max-width: 500px;
+    padding-bottom: 10px;
+
+}
+
+.about-card img {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.about-card h4 {
+    text-align: center;
+    padding: 10px;
+}

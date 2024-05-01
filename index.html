@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Texas Legends</title>
-        <meta name="description" content="Texas Legends Gun Range and Training Center">
-        <meta name="author" content="Eric Kalbfleisch">
         <link rel="icon" href="/media/logo/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--jQuery and Slider-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/lightslider.css">
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/lightslider.js"></script>
@@ -18,33 +17,57 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Bebas+Neue&family=Noto+Sans&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         
     </head>
-
     <body>
-        <header id="top">
-            
-            <nav>
-              <ul>
-                <img src="media/logo/logo_black_transparent.png" alt="Texas Legends Logo"/>
-                <li><a href="#rentals">Rentals</a></li>
-                <li><a href="#classes">Classes</a></li>
-                <li><a href="#memberships">Memberships</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="https://shop.texaslegendsguns.com/">Shop</a></li>
-                <li><a href="#ffl">FFL Transfers + NFA</a></li>
-              </ul>
+        <header id="top">     
+            <nav role="navigation">
+                <div class="mobile-nav" id="menuToggle">
+                    <input type="checkbox" />
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    <ul id="menu">
+                        <img src="media/logo/logo_black_transparent.png" alt="Texas Legends Logo"/>
+                        <li><a href="/rentals.html">Rentals</a></li>
+                        <li><a href="/classes.html">Classes</a></li>
+                        <li><a href="/memberships.html">Memberships</a></li>
+                        <li><a href="/rules.html">Rules</a></li>
+                        <li><a href="/our-team.html">Our Team</a></li>
+                        <li><a href="/shop.html">Shop</a></li>
+                        <li><a href="/ffl.html">FFL + NFA</a></li>
+                    </ul>
+              </div>
+
+              <div class="desktop-nav" id="desktop" >
+                <ul>
+                    <img src="media/logo/logo_black_transparent.png" alt="Texas Legends Logo"/>
+                    <li><a href="/rentals.html">Rentals</a></li>
+                    <li><a href="/classes.html">Classes</a></li>
+                    <li><a href="/memberships.html">Memberships</a></li>
+                    <li><a href="/rules.html">Rules</a></li>
+                    <li><a href="/our-team.html">Our Team</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="/ffl.html">FFL + NFA</a></li>
+                </ul>
+              </div>
            </nav>
         </header>
 
         <main>
+            <div class="under-nav"></div>
+
+            <!--splash video-->
             <div class="splash-video">
+                <!--
                 <video playsinline autoplay muted loop id="reel">
                     <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                 </video>
+                    -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/v-CnFEFfX8s?autoplay=1&mute=1&loop=1&controls=0" title="Ben Stoeger Practical Shooting Competition 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+
                 <div class="overlay-container">
                     <img src="media/logo/logo_white_transparent.png" alt="Texas Legends Logo"/>
                     <a href="https://waiver.smartwaiver.com/w/5e178b39ce353/web">Waiver</a>
@@ -52,18 +75,18 @@
             </div>
 
             <div class="hours-contact-container">
-                        <div class="hours slide-left">
-                            <h2> Range Hours</h2>
-                            <h3>10:00 AM - 9:00 PM Everyday</h3>
-                            <h4>We take our last shooters at 8:00PM</h4>
-                        </div>
-                        <div class="contact slide-right">
-                            <h2>Contact Us</h2>
-                            <h3>info@texaslegendsguns.com</h3>
-                            <h4>(469) 675-8803</h4>
-                            <h4>1499 Central Expressway North</h4>
-                            <h4>Allen, TX 75013</h4>
-                        </div>
+                <div class="hours slide-left">
+                    <h2> Range Hours</h2>
+                    <h3>10:00 AM - 9:00 PM Everyday</h3>
+                    <h4>We take our last shooters at 8:00PM</h4>
+                </div>
+                <div class="contact slide-right">
+                    <h2>Contact Us</h2>
+                    <h3>info@texaslegendsguns.com</h3>
+                    <h4>(469) 675-8803</h4>
+                    <h4>1499 Central Expressway North</h4>
+                    <h4>Allen, TX 75013</h4>
+                </div>
             </div>
 
             <div class="announcements"></div>
@@ -76,32 +99,36 @@
                 </iframe>
             </div>
 
+            <!--pricing-->
 
-            <h2>Range Pricing</h2>
+            <img class="header" src="/media/img/headers/header_range-pricing.png">
             <div class="pricing slide-right">
                 <div class="range-fees">
-                    <div class="pricing-pistol">
-                        <h2>Pistol/Rifle/Shotgun</h2>
-                        <section class="price-and-description">
-                            <h2>$22</h2>
-                            <h4>15 or 25 yard lane</h4>
-                        </section>
-                        <section class="price-and-description">
-                            <h2>$20</h2>
-                            <h4>each additional guest on the same lane</h4>
-                        </section>
-                    </div> 
-                    <div class="pricing-rifle">
-                        <h2>Rifle</h2>
-                        <section class="price-and-description">
-                            <h2>$28</h2>
-                            <h4>50 yard rifle only lane</h4>
-                        </section>
-                        <section class="price-and-description">
-                            <h2>$25</h2>
-                            <h4>each additional guest on the same lane</h4>
-                        </section>
+                    <div class="lane-pricing-container">
+                        <div class="pricing-pistol">
+                            <h2>Pistol/Rifle/Shotgun</h2>
+                            <section class="price-and-description">
+                                <h2>$22</h2>
+                                <h4>15 or 25 yard lane</h4>
+                            </section>
+                            <section class="price-and-description">
+                                <h2>$20</h2>
+                                <h4>each additional guest on the same lane</h4>
+                            </section>
+                        </div> 
+                        <div class="pricing-rifle">
+                            <h2>Rifle</h2>
+                            <section class="price-and-description">
+                                <h2>$28</h2>
+                                <h4>50 yard rifle only lane</h4>
+                            </section>
+                            <section class="price-and-description">
+                                <h2>$25</h2>
+                                <h4>each additional guest on the same lane</h4>
+                            </section>
+                        </div>
                     </div>
+                    <div class="essentials-target-container">
                     <div class="pricing-essentials">
                         <div class="essentials-text-container">
                             <h2>Essentials</h2>
@@ -137,7 +164,8 @@
                         <img src="/media/img/targets/zombie.jpg" alt="target-zombie">
                     </div>
                     <script type="text/javascript" src="js/target_slider.js"></script>
-                    </div>
+                </div>
+                </div>
                     <h3 class="first-responders">First Responders and Military Receive 10% off lane fees</h3>
                     <div class="pricing-rentals">
                         <div class="rentals1">
@@ -153,8 +181,8 @@
                             <section class="price-and-description">
                                 <h2>$50</h2>
                                 <h4>Handgun Package</h4>
-                                <h4>Includes primary lane fee and all $10 handguns (2 at a time)</h4>
                             </section>
+                            <h4 class="handgun-package-description">Includes primary lane fee and all $10 handguns (2 at a time)</h4>
                         </div>
                         <div class="rentals2"></div>
                         <div class="rentals3"></div>
@@ -164,16 +192,73 @@
                     </div> 
                 <h4 class="group-rates">Contact Us for Group and Event Pricing</h4>
             </div>
+
+            <!--about-->
+
+            <div class="about slide-bottom">
+                <img class="about-title" src="/media/img/headers/train_like_a_legend_black_whiteglow.png"/>
+                <div class="about-description-container">
+                    <div class="about-us-text-container">
+                        <div class="the-range-container">
+                            <img class="about-header" src="/media/img/headers/about_us_header_the_range_white.png" />
+                            <h3>30 State of the Art Shooting Lanes</h3>
+                            <ol> 
+                                <li>3 50 yard Rifle Only Lanes</li>
+                                <li>11 25 yard "Tactical" Lanes for Pistols, Rifles, and Shotguns</li>
+                                <li>16 15 yard Pistol lanes</li>
+                            </ol>
+                            <h3>Safety is our priority</h3>
+                            <ol> 
+                                <li>Top of the line ventilation</li>
+                                <li>Dedicated Range Safety Officers on duty at all times</li>
+                            </ol>
+                        </div>
+                        
+                        <img class="about-header" src="/media/img/headers/about_us_header_specials_white.png" />
+                        <div class="specials-container">
+                            <div class="specials-ladies-day">
+                                <h3>Ladies Day</h3>
+                                <img src="/media/img/classes/basic_handgun.png"/>
+                                <h6>All Day Wednesdays</h6>
+                                <h6>Ladies get 1/2 off lane fees, and 2 free targets!</h6>
+                            </div>
+                            <div class="specials-senior">
+                                <h3>Senior Special</h3>
+                                <img src="/media/img/classes/basic_handgun.png"/>
+                                <h6>Monday through Friday, 10am - 1pm</h6>
+                                <h6>Shooters aged 60+ get half off lane fees!</h6>
+                            </div>
+                            <div class="specials-events">
+                                <h3>events</h3>
+                                <img src="/media/img/classes/basic_handgun.png"/>
+                                <h6>Host your next event at Texas Legends</h6>
+                                <h6>Call us for group rates for 10 or more!</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--rentals-->
             <div class="rentals slide-left">
+
+                <!-- RENTAL FILTER DOESN'T WORK YET
+
                 <script type="text/javascript" src="js/rental_filter.js"></script>
                 <div class="filter-options">
-                    <h2>Firearm Rentals</h2>
+                    
                     <div class="filter-container">
                     <label><input type="checkbox" class="filter-checkbox" value="compact-pistol">Compact Pistol</label>
                     <label><input type="checkbox" class="filter-checkbox" value="full-size-pistol">Full-Size Pistol</label>
                     <label><input type="checkbox" class="filter-checkbox" value="long-gun">Rifle/Shotgun</label>
                     </div>
                 </div>
+
+                -- -->
+
+                <img class="header" src="/media/img/headers/header_rentals.png">
+
                 <section class="slider" id="products">
                     <ul id="rentals" class="cs-hidden">
                         <li class="item-a" data-category="full-size-pistol">
@@ -192,11 +277,11 @@
                             <div class="detail-box">
                                 <!--type-->
                                 <div class="type">
-                                    <a href="#">Glock</a>
+                                    <a>Glock</a>
                                     <span>17</span>
                                 </div>
                                 <!--price-->
-                                <a href="#" class="price">9mm</a>
+                                <a class="price">9mm</a>
                             </div>
                         </div>
                         </li>
@@ -580,8 +665,10 @@
                     </section>
                     <script type="text/javascript" src="js/script.js"></script>
             </div>
+
+            <!--classes-->
             <div class="classes slide-right">
-                <h2>Classes</h2>
+                <img class="header" src="/media/img/headers/header_classes.png">
                 <section class="slider" id="products">
                     <ul id="classes" class="cs-hidden">
                         <li class="item-a">
@@ -759,11 +846,14 @@
                 </section>
 
             </div>
-            <h2>Range Rules</h2>
+
+            <!--rules-->
+
+            <img class="header" src="/media/img/headers/header_range-rules.png">
             <div class="rules-container slide-bottom">
                 <div class="rules">
                 <div class="rules-general">
-                    <h3>General</h3>
+                    <p>General</p>
                     <ol>
                         <li>Eye and Ear protection must be worn at all times</li>
                         <li>No Pregnant Women</li>
@@ -776,7 +866,7 @@
                 </div>
 
                 <div class="rules-firearms-handling">
-                    <h3>Firearms Handling</h3>
+                    <p>Firearms Handling</p>
                     <ol>
                         <li>All Firearms must remain in cases, carry tubs, or holsters  until in a lane and forward of the RED SAFETY LINE</li>
                         <li>Do NOT transfer firearms from lane to lane, or person to person without a case, carry tub, or holster</li>
@@ -787,7 +877,7 @@
                 </div>
 
                 <div class="rules-shotguns">
-                    <h3>Shotguns</h3>
+                    <p>Shotguns</p>
                     <ol>
                         <li>Only buckshot or slugs - NO birdshot or target loads</li>
                         <li>Must have a shoulder stock and sights</li>
@@ -795,7 +885,7 @@
                 </div>
 
                 <div class="rules-rifles">
-                    <h3>Rifles</h3>
+                    <p>Rifles</p>
                     <ol>
                         <li>Must have sights</li>
                         <li>50 yard Rifle range is Rifles only</li>
@@ -803,65 +893,35 @@
                 </div>
             </div>
 
-                <a href="https://shop.texaslegendsguns.com/">Full Rules</a>
+                <a href="#">Full Rules</a>
+
+                
 
             </div>
-            <h2>Shop Our Online Store</h2>
+
+            <!--Online Store-->
+
+            <img class="header" src="/media/img/headers/header_online-store.png">
             <div class="online-store slide-bottom">
                 <div class="store-info-container">
-                    <h4>Can't find what you're looking for? Our online store is a direct link to our distributors - enabling you to shop the largest selection around!</h4>
-                    <h4>Firearms can be shipped to our store for pickup!</h4>
-                    <h4>Non-firearms can be shipped directly to your door!</h4>
+                    <div class="store-left">
+                        <h4>Can't find what you're looking for? Shop our online store!</h4>
+                    </div>
+                    <div class="store-middle">
+                        <h4>Our online store is a direct link to our distributors - enabling you to shop the largest selection around!</h4>
+                    </div>
+                    <div class="store-right">
+                        <h4>Firearms can be shipped to our store for pickup! <br> Non-firearms can be shipped directly to your door!</h4>
+                    </div>
                 </div>
                 <a href="https://shop.texaslegendsguns.com/">Enter</a>
             </div>
-            <div class="question">
-                <button id="questionButton">Ask a Question!</button>
-                <div id="questionPopup" class="popup">
-                    <div class="popup-content">
-                        <span class="close">&times;</span>
-                        <h2>Ask a Question</h2>
-                        <form id="questionForm">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br>
-                
-                            <label for="contactMethod">How should we contact you?</label><br>
-                            <input type="radio" id="contactMethodEmail" name="contactMethod" value="email">
-                            <label for="contactMethodEmail">Email</label><br>
-                            <input type="radio" id="contactMethodPhone" name="contactMethod" value="phone">
-                            <label for="contactMethodPhone">Phone</label><br>
-                
-                            <div id="phoneField" class="hidden">
-                                <label for="phone">Phone Number:</label>
-                                <input type="tel" id="phone" name="phone"><br>
-                            </div>
-                
-                            <div id="emailField" class="hidden">
-                                <label for="email">Email Address:</label>
-                                <input type="email" id="email" name="email"><br>
-                            </div>
-                
-                            <label for="question">Your Question:</label><br>
-                            <textarea id="question" name="question" rows="4" required></textarea><br>
-                
-                            <input class="submit-button" type="submit" value="Submit">
-                        </form>
-                    </div>
-                </div>
-                
-                <script src="/js/question.js"></script>
-            </div>
-
-
-
-            
         </main>
-
         <footer>
             
             <div class="footer">
                 <div class="logo">
-                    <a href="#top"><img class="logo" src="media/logo/logo_white_transparent.png" alt="" /></a>
+                    <a href="/index.html"><img class="logo" src="media/logo/logo_white_transparent.png" alt="" /></a>
                 </div>
 
                 <div class="footer-container">
@@ -873,16 +933,18 @@
                           </form>
                     </div>
                     <div class="social">
-                        <h3>Follow Us!</h3>
+                        <a>Follow Us!</a>
+                        <div class="social-icon-container">
                         <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-instagram-13-240.png"></a>
                         <a href="https://www.facebook.com/TexasLegendsGuns/"><img src="/media/social/iconmonstr-facebook-3-240.png"></a>
                         <a href="https://www.instagram.com/texaslegendsgunrange/"><img src="/media/social/iconmonstr-youtube-8-240.png"></a>
+                        </div>
                     </div>
                     <div class="recruiting">
-                        <a href="#">Join Our Team</a>
+                        <a href="/join-us.html">Join Our Team</a>
                     </div>
                     <div class="contact-us">
-                        <h3>info@texaslegendsguns.com</h3>
+                        <a>info@texaslegendsguns.com</a>
                         <h4>(469) 675-8803</h4>
                         <h4>1499 Central Expressway North</h4>
                         <h4>Allen, TX 75013</h4>
@@ -890,6 +952,5 @@
                 </div>
             </div>
     </footer>
-</body>
-
+    </body>
 </html>
